@@ -1,0 +1,375 @@
+body, html{
+   margin: 0;
+   padding: 0;
+   font-family: Copperplate, tahoma ;
+   background-image: url(./Img/fondo-background.jpeg);
+   background-repeat: no-repeat;
+   background-attachment:fixed;
+   background-size: cover;
+}
+h1, h3{
+   margin: 0;
+}
+
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+/* Estilos de navbar */
+ .navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    text-shadow: 2px 2px 5px white;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+ }
+ .fakeNavbar{
+    width: 100%;
+    height: 126px;
+ }
+ .bi-bi-graph-up{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black;
+    transition: 400ms;
+ }
+ .bi-bi-graph-up:hover{
+   color:rgb(85,195,249) ;
+ }
+ .navBarLinks {
+    list-style: none;
+    display: flex;
+ }
+ .navBarLinks > li{ 
+   font-size: 20px ;
+}
+.navBarLinks > li > a{
+   margin: 10px;
+   transition: 350ms;
+   color: rgb(2, 32, 32);
+   text-decoration: none;
+}
+.navBarLinks > li > a:hover{
+   color: rgb(85,195,249);
+}
+.banner {
+   font-size: 20px;
+   text-align: center;
+   justify-content: center;
+   background-color: rgb(183, 187, 190);
+   padding-bottom: 30px;
+   text-transform: uppercase;
+}
+.banner > h2 {
+   font-size: 14px;
+   text-decoration: underline 3px rgb(85,195,249);
+}
+.cardSection{
+   padding-bottom: 40px;
+}
+.cardImgCenter{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+.portfolioCardImage {
+   width: 200px ;
+   height: 200px ;
+   font: Verdana;
+   justify-content: center;
+   align-items: center;
+   border: 4px solid rgb(95, 89, 89);
+   border-radius: 8px;
+   padding: 1px;
+   transition: 400ms;
+}
+.portfolioCardsItemBody > button {
+   background-color: lightblue;
+   color: black;
+   border: 1px solid transparent;
+   padding: 5px 20px;
+   text-decoration: none;
+   transition: 200ms ease;
+   cursor: pointer;
+   font-weight: bold;
+   border: 1px solid black;
+}
+button:focus {outline:0;}
+.portfolioCardsItemBody > button:hover {
+   background-color: transparent;
+   border: 3px solid black;
+   color: rgb(95, 89, 89);
+}
+h1{
+   text-align: center;
+   padding-top: 40px;
+}
+h4{
+   text-shadow: 2px 2px 5px white;
+   font-size: 25px;
+}
+.servers{
+   text-align: center;
+   padding-bottom: 25px;
+}
+.portfolioCardImage:hover {
+   color: turquoise;
+}
+.workExp{
+   padding-bottom: 25px;
+}
+.tableExp {
+   border-style: solid;
+}
+.tableExp > tr > th{
+   background-color: lightblue;
+}
+.contact{
+   display: flex;
+   justify-content: center;
+   padding: 45px 0;
+   align-items: center;
+}
+.iconContact{
+   text-align:center;
+   padding-top: 20px;
+   padding-left: 150px;
+   padding-right: 150px;
+}
+.iconContact > a{
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   color: rgb(0, 0, 0)
+}
+.iconContact > a > p{
+   margin-left: 20px;
+   text-shadow: 2px 2px 12px black;
+   transition: 300ms;
+}
+.iconContact >a > p:hover{
+   color: rgb(85,195,249) ;
+}
+.titleContact{
+   padding-top: 20px;
+   padding-bottom: 20px;
+   text-decoration: overline rgb(85,195,249);
+}
+
+main{
+   background-color: rgba(255, 255, 255, .7);
+   padding: 0 20px;
+}
+/* TABLE */
+table{
+   width: 100%;
+   border-collapse: collapse;
+   border-color: black;
+}
+table > tbody > tr > td{
+   border: 2px solid black;
+   text-align: center;
+}
+.sectionTable{
+   background-color: rgba(18, 18, 19, .25);
+   width: 100%;
+   padding-bottom: 45px;
+}
+/* FOOTER */
+
+.footer{
+   justify-content: space-between;
+   display: flex;
+   margin: 0px;
+   background-color: rgb(102,102,102);
+   color:black;
+   flex-wrap: wrap;
+   padding: 40px 20px;
+}
+.footer1{
+   justify-content: space-between;
+   display: flex;
+   margin: 0px;
+   width: 100%;
+   background-color: rgb(102,102,102);
+   color:black;
+   flex-wrap: wrap;
+   padding: 40px 20px;
+}
+.imgFooter{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   flex: 1;
+   transition: 400ms;
+  }
+  .imgFooter > img {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   transition: 400ms;
+  }
+  .imgFooter > img:hover{
+   color: rgb(85,195,249);
+  }
+  .footerDescript{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   text-align: start;
+   flex: 1;
+  }
+   .footerHobbies{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex: 1;
+   }
+.footer__hobbies__icons{
+   display: flex;
+}
+.footer__hobbies__icons > span{
+   margin: 0 10px;
+}
+.footerNetWorks{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex: 1;
+}
+.footerNetworksItem{
+   display: flex;
+}
+.footerNetworksItem > a {
+   margin: 0 10px;
+   color: rgb(18, 18, 19);
+   transition: color 450ms ease;
+
+}
+.footerNetworksItem > a:hover {
+   color: rgb(85,195,249) ;
+   cursor: pointer;
+}
+.span > svg > p{
+   justify-content:center;
+   text-align:center;
+   align-items: center;
+}
+.rrssFooter > div > a{
+  display: flex;
+}
+
+/* Copyright */
+.copyright{
+
+   background-color: rgba(0, 0, 0, .7);
+   text-align: center;
+   color: rgb(85,195,249) ;
+}
+.copyright > p {
+   margin: 0 20px;
+   padding: 10px;
+   border-top: 1px solid lightblue ;
+   font-size: 12px;
+}
+.copyright1{
+   background-color: rgba(0, 0, 0, .7);
+   text-align: center;
+   color: rgb(85,195,249);
+   width: 100%;
+}
+.copyright1 > p {
+   margin: 0 20px;
+   padding: 10px;
+   border-top: 1px solid lightblue ;
+   font-size: 12px;
+}
+
+/* Counter Page */
+
+.counterTitle{
+   text-align: center;
+   justify-content: center;
+   font-size: 36px;
+   padding-top: 20px;
+   width: 100%;
+}
+.counterTitle > h2{
+   font-size: 20px;
+}
+.inputBoxes{
+   display: flex;
+   align-items:center;
+   justify-content: center;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+.firstBox{
+   flex: 4;
+}
+.secondBox{
+   flex: 4;
+}
+.actions{
+   padding-bottom: 35px;
+   align-items: center;
+}
+.clearAll {
+   background-color: lightblue;
+   color: black;
+   border: 1px solid transparent;
+   padding: 5px 20px;
+   text-decoration: none;
+   transition: 200ms ease;
+   cursor: pointer;
+   font-weight: bold;
+   border: 1px solid black;
+   flex: 3;
+}
+.deleteSection{
+   padding-bottom: 35px;
+   border-bottom: 4px solid turquoise;
+}
+button:focus {outline:0;}
+.clearAll:hover {
+   background-color: transparent;
+   border: 3px solid black;
+   color: rgb(95, 89, 89);
+}
+.eject {
+   background-color: lightblue;
+   color: black;
+   border: 1px solid transparent;
+   padding: 5px 20px;
+   text-decoration: none;
+   transition: 200ms ease;
+   cursor: pointer;
+   font-weight: bold;
+   border: 1px solid black;
+}
+button:focus {outline:0;}
+.eject:hover {
+   background-color: transparent;
+   border: 3px solid black;
+   color: rgb(95, 89, 89);
+}
+.resultadoFinal{
+   font-size: 45px;
+}
+/* Buttons Counter */
+.boxCounter{
+   padding-top: 20px;
+}
+
+.btns{
+   margin: 40px ;
+   padding-bottom: 65px;
+}

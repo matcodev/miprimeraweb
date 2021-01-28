@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../Don Alfonso Set/c1__html-master"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Codeme"
+	}
+}
